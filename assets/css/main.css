@@ -1,0 +1,47 @@
+.pixel-font { 
+    font-family: 'Press Start 2P', cursive; 
+    line-height: 1.5;
+}
+
+.modern-font { 
+    font-family: 'Outfit', sans-serif; 
+}
+
+.hero-gradient {
+    background: linear-gradient(130deg, #FF6B2C, #FF922C, #7C3AED);
+    background-image: url('/assets/img/background.png');
+    background-position-x: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+    
+    .pixel-font {
+        font-size: 90%; /* Smaller text on mobile */
+    }
+}
+
+/* Animation keyframes */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}

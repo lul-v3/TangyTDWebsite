@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangy TD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body class="bg-gray-900 text-white modern-font">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="pixel-font text-xl md:text-2xl text-orange-400">Tangy TD</h1>
+            
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu md:hidden">
+                <button class="mobile-menu-button p-4">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+                
+                <!-- Mobile Navigation Menu -->
+                <div class="mobile-nav hidden absolute top-full left-0 right-0 bg-gray-900 glass-effect">
+                    <div class="px-4 py-2 space-y-4">
+                        <a href="#features" class="block hover:text-orange-400 transition-colors">Features</a>
+                        <a href="#heroes" class="block hover:text-orange-400 transition-colors">Heroes</a>
+                        <a href="#story" class="block hover:text-orange-400 transition-colors">Story</a>
+                        <a href="https://store.steampowered.com/app/2245620/Tangy_TD/" 
+                           class="block bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg transition-all">
+                            Play Demo on Steam
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#features" class="hover:text-orange-400 transition-colors">Features</a>
+                <a href="#heroes" class="hover:text-orange-400 transition-colors">Heroes</a>
+                <a href="#story" class="hover:text-orange-400 transition-colors">Story</a>
+                <a href="https://store.steampowered.com/app/2245620/Tangy_TD/" 
+                   class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-lg transition-all">
+                    Play Demo on Steam
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/40"></div>
+        <div class="z-10 text-center px-4 max-w-4xl mx-auto flex flex-col items-center">
+            <img src="assets/img/game_logo.png" class="max-w-xs md:max-w-md lg:max-w-lg w-full h-auto mx-auto">
+            <p class="text-xl md:text-2xl mb-8 mt-4 text-center">
+                Get ready to Level up, train Skills, craft Items and build your perfect team to counter smart hordes of enemies. 
+                In this 2D Tower Defense game your Skills will be tested to the Limit! 
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://store.steampowered.com/app/2245620/Tangy_TD/" 
+                class="bg-orange-500 hover:bg-orange-600 pixel-font py-4 px-8 rounded-lg transition-all transform hover:scale-105">
+                    Play Demo
+                </a>
+                <button class="bg-purple-600 hover:bg-purple-700 pixel-font py-4 px-8 rounded-lg transition-all transform hover:scale-105">
+                    Watch Trailer
+                </button>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="pixel-font text-3xl md:text-4xl text-center mb-16 text-orange-400">Game Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl hover:transform hover:scale-105 transition-all">
+                    <div class="text-orange-400 text-4xl mb-4">🎮</div>
+                    <h3 class="pixel-font text-orange-400 mb-4">Strategic Gameplay</h3>
+                    <p>Level up heroes and create powerful skill synergies with 40+ unique abilities</p>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl hover:transform hover:scale-105 transition-all">
+                    <div class="text-orange-400 text-4xl mb-4">🗺️</div>
+                    <h3 class="pixel-font text-orange-400 mb-4">Multiple Maps</h3>
+                    <p>Each map requires different strategies to complete, testing your tactical skills</p>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl hover:transform hover:scale-105 transition-all">
+                    <div class="text-orange-400 text-4xl mb-4">⚔️</div>
+                    <h3 class="pixel-font text-orange-400 mb-4">Epic Battles</h3>
+                    <p>Face challenging bosses and diverse enemy types with unique mechanics</p>
+                </div>
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 md:p-8 rounded-2xl hover:transform hover:scale-105 transition-all">
+                    <div class="text-orange-400 text-4xl mb-4">🌟</div>
+                    <h3 class="pixel-font text-orange-400 mb-4">Skill Trees</h3>
+                    <p>Customize your heroes with extensive skill trees and powerful combinations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section id="heroes" class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+        <h2 class="pixel-font text-3xl md:text-4xl text-center mb-16 text-orange-400">Meet the Heroes</h2>
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 lg:space-x-12 glass-effect rounded-2xl p-6 hover:transform hover:scale-105 transition-all">
+                <!-- Hero 1 | Replace this with the actual hero image -->
+                <img src="assets/img/heros/hero_1.png" class="w-32 h-32 md:w-40 md:h-40 object-contain"/>
+                <div>
+                    <h3 class="pixel-font text-xl md:text-2xl text-orange-400 mb-2">Defender</h3>
+                    <p>Melee combat specialist with high defense and utility buffs to protect allies</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 lg:space-x-12 glass-effect rounded-2xl p-6 hover:transform hover:scale-105 transition-all">
+                <!-- Hero 2 | Replace this with the actual hero image -->
+                <img src="assets/img/heros/hero_1.png" class="w-32 h-32 md:w-40 md:h-40 object-contain"/>
+                <div>
+                    <h3 class="pixel-font text-xl md:text-2xl text-orange-400 mb-2">Healer</h3>
+                    <p>Support unit with healing abilities and powerful lightning damage potential</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 lg:space-x-12 glass-effect rounded-2xl p-6 hover:transform hover:scale-105 transition-all">
+                <!-- Hero 3 | Replace this with the actual hero image -->
+                <img src="assets/img/heros/hero_1.png" class="w-32 h-32 md:w-40 md:h-40 object-contain"/>
+                <div>
+                    <h3 class="pixel-font text-xl md:text-2xl text-orange-400 mb-2">Ranger</h3>
+                    <p>Versatile long-range specialist with multiple damage type mastery</p>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-6 lg:space-x-12 glass-effect rounded-2xl p-6 hover:transform hover:scale-105 transition-all">
+                <img src="assets/img/heros/hero_1.png" class="w-32 h-32 md:w-40 md:h-40 object-contain"/>
+                <div>
+                    <h3 class="pixel-font text-xl md:text-2xl text-orange-400 mb-2">Mage</h3>
+                    <p>Area damage expert specializing in fire and ice abilities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="py-20 px-6 md:px-12 bg-gray-900 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="pixel-font text-3xl md:text-4xl mb-8 text-orange-400">The Story</h2>
+            <p class="text-lg md:text-xl mb-6 leading-relaxed">
+                Welcome to <strong>Tangy TD</strong>, the exciting tower defense game that puts you in charge of protecting the realm of Tangerines from waves of invading Undead summoned by an "evil" force!
+            </p>
+            <p class="text-lg md:text-xl mb-6 leading-relaxed">
+                In this deliciously fun game, you'll need to use your strategic skills to place your Hero Tangys along the paths and use a variety of skills and tactics to fight off the invaders and emerge victorious.
+            </p>
+            <p class="text-lg md:text-xl mb-6 leading-relaxed">
+                Choose from multiple thrilling missions, each with unique challenges and objectives. Level up your Tangys and invest Skillpoints into their Skilltrees. Each Skilltree offers various abilities and upgrades to permanently enhance your Tangy's power and give them an edge in combat.
+            </p>
+            <p class="text-lg md:text-xl mb-6 leading-relaxed">
+                Enemies come in all shapes and sizes, from nimble winged creatures to towering behemoths. Use advanced targeting and supportive buffs/abilities to create an MMO Raid-like experience. In <strong>Tangy TD</strong>, the enemies fight back!
+            </p>
+            <p class="text-lg md:text-xl leading-relaxed">
+                With its unique tangy-themed world, exciting missions, and strategic gameplay, <strong>Tangy TD</strong> is a game sure to satisfy your craving for thrilling tower defense action. Don't wait - download <strong>Tangy TD</strong> today and start defending your realm!
+            </p>
+        </div>
+    </section>
+
+    <!-- Screenshot Section -->
+    <section id="screenshots" class="py-20 bg-gray-900 text-center relative overflow-hidden">
+        <h2 class="pixel-font text-3xl md:text-4xl text-orange-400 mb-10">Game Screenshots</h2>
+        
+        <div class="max-w-4xl mx-auto relative flex items-center justify-center">
+            <button id="prev" class="absolute left-4 md:left-8 top-1/2 transform -translate-y-1/2 bg-black/50 p-3 rounded-full shadow-lg hover:bg-black/70 transition">
+                &#10094;
+            </button>
+            <div class="relative w-full max-w-3xl overflow-hidden">
+                <img id="screenshot" src="assets/images/screenshot1.jpg" class="rounded-lg shadow-lg w-full object-cover">
+            </div>
+            <button id="next" class="absolute right-4 md:right-8 top-1/2 transform -translate-y-1/2 bg-black/50 p-3 rounded-full shadow-lg hover:bg-black/70 transition">
+                &#10095;
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-8 mb-8">
+                <a href="#" class="text-orange-400 hover:text-orange-300 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-orange-400 hover:text-orange-300 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-orange-400 hover:text-orange-300 transition-colors">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314
+                        .369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                <a href="#" class="text-sm hover:text-orange-400 transition-colors">Privacy Policy</a>
+                <a href="#" class="text-sm hover:text-orange-400 transition-colors">Terms of Service</a>
+                <a href="#" class="text-sm hover:text-orange-400 transition-colors">Contact</a>
+            </div>
+            <p class="pixel-font text-sm">Created by cakez77 © 2024</p>
+        </div>
+    </footer>
+
+    <script>
+        const screenshots = [
+            "assets/img/screenshots/screenshot_1.jpg",
+            "assets/img/screenshots/screenshot_2.jpg",
+            "assets/img/screenshots/screenshot_3.jpg",
+            "assets/img/screenshots/screenshot_4.jpg",
+            "assets/img/screenshots/screenshot_5.jpg",
+            "assets/img/screenshots/screenshot_6.jpg",
+            "assets/img/screenshots/screenshot_7.jpg",
+            "assets/img/screenshots/screenshot_8.jpg"
+        ];
+        let currentIndex = 0;
+        const screenshotElement = document.getElementById("screenshot");
+        const next = document.getElementById("next");
+        const prev = document.getElementById("prev");
+        
+        next.addEventListener("click", () => {
+            currentIndex = (currentIndex + 1) % screenshots.length;
+            updateImage();
+        });
+        
+        prev.addEventListener("click", () => {
+            currentIndex = (currentIndex - 1 + screenshots.length) % screenshots.length;
+            updateImage();
+        });
+    
+        function updateImage() {
+            screenshotElement.classList.add("opacity-0");
+            setTimeout(() => {
+                screenshotElement.src = screenshots[currentIndex];
+                screenshotElement.classList.remove("opacity-0");
+            }, 200);
+        }
+    
+        function loadFirstImage() {
+            updateImage();
+        }
+    
+        loadFirstImage();
+    </script>
+    
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
